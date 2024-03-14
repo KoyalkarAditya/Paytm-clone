@@ -25,11 +25,9 @@ export default function LoginToggle() {
           </g>
         </svg>
       </div>
-      <RecoilRoot>
-        <div className="flex justify-center">
-          <Toggle />
-        </div>
-      </RecoilRoot>
+      <div className="flex justify-center">
+        <Toggle />
+      </div>
     </div>
   )
 

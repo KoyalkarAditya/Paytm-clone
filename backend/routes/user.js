@@ -86,6 +86,7 @@ routes.post("/signin", async (req, res) => {
         const token = jwt.sign({ userId }, JWT_SECRET);
         return res.json({
           token: token,
+          message: "Login successful",
         });
       } else {
         return res.status(411).json({
@@ -152,6 +153,7 @@ routes.get("/bulk", async (req, res) => {
       username: user.username,
       firstName: user.firstName,
       lastName: user.lastName,
+      _id: user._id,
     })),
   });
 });
