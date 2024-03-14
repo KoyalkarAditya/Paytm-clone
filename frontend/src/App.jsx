@@ -1,9 +1,10 @@
+import "./App.css"
+import LoginToggle from "./components/LoginToggle"
 
 function App() {
-
   return (
     <div>
-        Hello world
+      <LoginToggle />
     </div>
   )
 }
