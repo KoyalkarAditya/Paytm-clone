@@ -5,7 +5,7 @@ import Signup from "./pages/Signup";
 import DashBoard from "./pages/DashBoard";
 import SendMoney from "./pages/SendMoney";
 import HomePage from "./pages/HomePage";
-import UpdateInfo from "./components/UpdateInfo";
+import UpdateInfo from "./pages/UpdateInfo";
 function App() {
   return (
     <>

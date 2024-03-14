@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { InputBox } from "../components/InputBox";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -53,7 +53,7 @@ export default function UpdateInfo() {
               if (password) {
                 updatedFeilds.password = password;
               }
-              const responce = axios.put(
+              const responce = await axios.put(
                 "http://localhost:3000/api/v1/user/update",
                 updatedFeilds,
                 {
@@ -62,6 +62,7 @@ export default function UpdateInfo() {
                   },
                 }
               );
+              alert(responce.data.message);
             }}
           >
             Apply Changes{" "}
